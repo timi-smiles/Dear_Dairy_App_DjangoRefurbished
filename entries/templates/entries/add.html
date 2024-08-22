@@ -2,7 +2,10 @@
     <h1>DEAR DIARY</h1>
 </div>
 
-
+<form method='POST' action="{% url 'add'%}">
 <div>
-    <input type="text">
+    {{ form.text }}
 </div>
+
+<button>Submit</button>
+</form>
